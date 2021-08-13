@@ -5,7 +5,7 @@ const apiKey = "&units=imperial&appid=eb5a120ff7fc79e89928882f7c56d924";
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = d.getMonth()+1+'.'+ d.getDate()+'.'+ d.getFullYear();
 
 // Add an event listener to the generate button to start async function to get weather info
 document.getElementById("generate").addEventListener("click", weatherInfoCallBack);
